@@ -3,11 +3,17 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from 'paginas/Home'
 import Sobre from 'paginas/Sobre'
-import './assets/css/base/base.css'
+import 'assets/css/base/base.css'
+import Pagina404 from 'paginas/Pagina404';
+import Cabecalho from 'components/Cabecalho';
 
 function App() {
   return (
     <BrowserRouter>
+      {/*
+        Colocando o Cabecalho antes do Switch, garante que ele sempre vai ser visivel
+      */}
+      <Cabecalho />
       {/*
         O Switch previne o funcionamento padrão de ficar procurar outra rotas parecidas
         caso ache a rota /sobre abre e não faz mais nada
@@ -18,6 +24,9 @@ function App() {
         </Route>
         <Route path='/sobre'>
           <Sobre />  
+        </Route>
+        <Route>
+          <Pagina404 />
         </Route>
       </Switch>      
     </BrowserRouter>

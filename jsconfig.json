@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "pages": ["paginas"]
+      "paginas": ["paginas"],
+      "assets": ["assets"],
+      "components": ["components"]
     }
   },
   "exclude": ["node_modules"],
