@@ -35,3 +35,8 @@ You will also see any lint errors in the console.
 * - Mudamos a tag <a> do html para que o React consiga entender utilizando o Link ;
 * - Utilizamos a biblioteca axios para fazer requisições no servidor para buscar artigos;
 * - Fizemos uma requisição de um artigo específico passando o id do curso, utilizando o useEffect.
+
+### Aula 4
+
+* - Mandamos a pessoa para o componente de 404 utilizando a função useHistory();
+* - Melhoramos a experiência de buscar um artigo criando um filtro por categorias;
