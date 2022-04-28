@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "pages": ["paginas"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}
